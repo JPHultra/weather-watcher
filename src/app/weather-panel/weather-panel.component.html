@@ -6,8 +6,10 @@
         <mat-card-subtitle>Small</mat-card-subtitle>
       </mat-card-title-group>
       <mat-card-content>
-        <p>Temperatura Max: {{w.tMax}}º</p>
-        <p>Temperatura Min: {{w.tMin}}º</p>
+        <div class="row">
+          <span class="minTemp">{{w.tMin}}º</span>
+          <span class="maxTemp">{{w.tMax}}º</span>
+        </div>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>
