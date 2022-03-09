@@ -19,7 +19,7 @@ export class WeatherPanelComponent implements OnInit {
     console.log("init");
 
     this.WeatherService.get(Constants.API_VISEU_WEATHER_ENDPOINT).subscribe(res => {
-      console.log(Object.getOwnPropertyNames(res));
+      console.log(Object.getOwnPropertyNames(res.data[0]));
     });
   }
 
