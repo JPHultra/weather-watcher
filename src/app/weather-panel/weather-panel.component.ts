@@ -18,8 +18,8 @@ export class WeatherPanelComponent implements OnInit {
   ngOnInit(): void {
     console.log("init");
 
-    weatherData = WeatherService.get(Constants.API_VISEU_WEATHER_ENDPOINT);
-    console.log(weatherData);
+    this.weatherData = WeatherService.get(Constants.API_VISEU_WEATHER_ENDPOINT);
+    console.log(this.weatherData);
   }
 
 }
