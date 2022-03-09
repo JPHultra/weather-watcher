@@ -20,9 +20,9 @@ export class WeatherPanelComponent implements OnInit {
   hello = "Hello"
 
   weather: any[] = [];
-  weatherType: any[] = [];
-  windClass: any[] = [];
-  precipitationClass: any[] = [];
+  weatherType = {};
+  windClass = {};
+  precipitationClass = {};
 
   ngOnInit(): void {
     this.WeatherService.get(Constants.API_VISEU_WEATHER_ENDPOINT).subscribe((res: any) => {
@@ -33,19 +33,19 @@ export class WeatherPanelComponent implements OnInit {
 
     this.WeatherService.get(Constants.API_WEATHER_TYPE_ENDPOINT).subscribe((res: any) => {
       res.data.map((entry: any) =>{
-        this.weatherType.push(entry);
+        this.weatherType[entry.idWeatherType] = entry.descIdWeatherTypePT;
       });
     });
 
     this.WeatherService.get(Constants.API_WIND_CLASS_ENDPOINT).subscribe((res: any) => {
       res.data.map((entry: any) =>{
-        this.windClass.push(entry);
+        this.windClass[entry.classWindSpeed] = entry.descClassWindSpeedDailyPT;
       });
     });
 
     this.WeatherService.get(Constants.API_PRECIPITATION_CLASS_ENDPOINT).subscribe((res: any) => {
       res.data.map((entry: any) =>{
-        this.precipitationClass.push(entry);
+        this.precipitationClass[entry.classPrecInt] = entry.descClassPrecIntPT;
       });
     });
   }

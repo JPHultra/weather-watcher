@@ -3,7 +3,7 @@
     <mat-card class="example-card">
       <mat-card-title-group>
         <mat-card-title>Data: {{w.forecastDate}}</mat-card-title>
-        <mat-card-subtitle>{{weatherType[w.idWeatherType].descIdWeatherTypePT}}</mat-card-subtitle>
+        <mat-card-subtitle>{{weatherType[w.idWeatherType]}}</mat-card-subtitle>
       </mat-card-title-group>
       <mat-card-content>
         <div class="tempShow">
@@ -12,8 +12,8 @@
             <span class="maxTemp">{{w.tMax}}º</span>
           </div>
         </div>
-        <p>Vento {{windClass[w.classWindSpeed].descClassWindSpeedDailyPT}}, com direção a {{w.predWindDir}}</p>
-        <p>Precipitação {{precipitationClass[w.classPrecInt].descClassPrecIntPT}}</p>
+        <p>Vento {{windClass[w.classWindSpeed]}}, com direção a {{w.predWindDir}}</p>
+        <p>Precipitação {{precipitationClass[w.classPrecInt]}}</p>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>
