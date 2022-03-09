@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Angular Materials Import //
+import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 // Angular Materials Import //
 
@@ -17,6 +18,7 @@ import { MatCardModule } from "@angular/material/card";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatGridListModule,
     MatCardModule
   ],
   providers: [],
