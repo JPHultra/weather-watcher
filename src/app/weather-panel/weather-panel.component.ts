@@ -33,19 +33,19 @@ export class WeatherPanelComponent implements OnInit {
 
     this.WeatherService.get(Constants.API_WEATHER_TYPE_ENDPOINT).subscribe((res: any) => {
       res.data.map((entry: any) =>{
-        this.weatherType[entry.idWeatherType] = entry.descIdWeatherTypePT;
+        this.weatherType[entry.idWeatherType.toString()] = entry.descIdWeatherTypePT;
       });
     });
 
     this.WeatherService.get(Constants.API_WIND_CLASS_ENDPOINT).subscribe((res: any) => {
       res.data.map((entry: any) =>{
-        this.windClass[entry.classWindSpeed] = entry.descClassWindSpeedDailyPT;
+        this.windClass[entry.classWindSpeed.toString()] = entry.descClassWindSpeedDailyPT;
       });
     });
 
     this.WeatherService.get(Constants.API_PRECIPITATION_CLASS_ENDPOINT).subscribe((res: any) => {
       res.data.map((entry: any) =>{
-        this.precipitationClass[entry.classPrecInt] = entry.descClassPrecIntPT;
+        this.precipitationClass[entry.classPrecInt.toString()] = entry.descClassPrecIntPT;
       });
     });
   }
