@@ -17,8 +17,6 @@ import { MatCardModule } from "@angular/material/card";
   ],
   imports: [
     BrowserModule,
-    NgModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     MatGridListModule,
