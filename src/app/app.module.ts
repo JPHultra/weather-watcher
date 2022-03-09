@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WeatherPanelComponent } from './weather-panel/weather-panel.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Materials Import //
@@ -13,7 +14,8 @@ import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WeatherPanelComponent
   ],
   imports: [
     BrowserModule,
