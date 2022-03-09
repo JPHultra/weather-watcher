@@ -4,11 +4,13 @@
 
 .maxTemp{
   background-color: darkorange;
+  padding: 10px 5px;
 }
 
 .mat-card-content{
   display: flex;
   align-self: center;
+  align-content: center;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
