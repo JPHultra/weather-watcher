@@ -13,6 +13,7 @@ export class WeatherPanelComponent implements OnInit {
   constructor(private WeatherService: WeatherApiHandlerService) { }
 
   weatherData = "hi";
+  hello = "Hello"
 
   ngOnInit(): void {
     console.log("init");
