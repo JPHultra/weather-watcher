@@ -26,7 +26,7 @@ export class WeatherPanelComponent implements OnInit {
 
 
     this.WeatherService.get(Constants.API_VISEU_WEATHER_ENDPOINT).subscribe((res: any) => {
-      res.map((entry: any) =>{
+      res.data.map((entry: any) =>{
         this.weather.push(entry);
       });
     });
