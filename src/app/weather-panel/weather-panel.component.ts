@@ -14,8 +14,6 @@ import { WeatherApiHandlerService } from '../weather-api-handler.service'
 })
 export class WeatherPanelComponent implements OnInit {
 
-
-
   constructor(private WeatherService: WeatherApiHandlerService) { }
 
   weatherData: any;
