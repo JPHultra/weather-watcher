@@ -20,7 +20,7 @@ import { MatCardModule } from "@angular/material/card";
     AppRoutingModule,
     HttpClientModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
