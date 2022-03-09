@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import{ Constants } from './constants';
+import{ Constants } from '../constants';
 
 @Component({
   selector: 'app-weather-panel',
