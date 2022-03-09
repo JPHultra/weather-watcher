@@ -6,9 +6,11 @@
         <mat-card-subtitle>{{weatherType[w.idWeatherType + 1].descIdWeatherTypePT}}</mat-card-subtitle>
       </mat-card-title-group>
       <mat-card-content>
-        <div class="tempRow">
-          <span class="minTemp">{{w.tMin}}º</span>
-          <span class="maxTemp">{{w.tMax}}º</span>
+        <div class="tempShow">
+          <div>
+            <span class="minTemp">{{w.tMin}}º</span>
+            <span class="maxTemp">{{w.tMax}}º</span>
+          </div>
         </div>
         <p>Vento {{windClass[w.classWindSpeed + 1].descClassWindSpeedDailyPT}}, com direção a {{w.predWindDir}}</p>
       </mat-card-content>
