@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
+import{ Constants } from './constants';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'weather-watcher';
+  title = Constants.TITLE_WEBSITE;
 }
