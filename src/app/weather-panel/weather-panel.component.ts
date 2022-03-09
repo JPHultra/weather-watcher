@@ -20,9 +20,9 @@ export class WeatherPanelComponent implements OnInit {
   hello = "Hello"
 
   weather: any[] = [];
-  weatherType = {};
-  windClass = {};
-  precipitationClass = {};
+  weatherType: any = {};
+  windClass: any = {};
+  precipitationClass: any = {};
 
   ngOnInit(): void {
     this.WeatherService.get(Constants.API_VISEU_WEATHER_ENDPOINT).subscribe((res: any) => {
