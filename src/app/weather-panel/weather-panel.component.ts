@@ -14,7 +14,7 @@ import { WeatherApiHandlerService } from '../weather-api-handler.service'
 })
 export class WeatherPanelComponent implements OnInit {
 
-  public myAngularxQrCode: string = null;
+  public myAngularxQrCode: string = "";
 
   constructor(private WeatherService: WeatherApiHandlerService) {
     this.myAngularxQrCode = 'Was i a good QRCode? No...';
