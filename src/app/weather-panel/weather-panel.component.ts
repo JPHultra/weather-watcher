@@ -21,7 +21,7 @@ export class WeatherPanelComponent implements OnInit {
   }
 
   weatherData: any;
-  hello = "Hello, hi"
+  hello = "Hello"
 
   weather: any[] = [];
   weatherType: any = {};
