@@ -14,6 +14,7 @@
         </div>
         <p>Vento {{windClass[w.classWindSpeed.toString()]}}, com direção a {{w.predWindDir}}</p>
         <p>Precipitação {{precipitationClass[w.classPrecInt.toString()]}}</p>
+        <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>

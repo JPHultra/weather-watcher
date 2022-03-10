@@ -12,10 +12,12 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 // Angular Materials Import //
 
+import { QRCodeModule } from 'angularx-qrcode';
+
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherPanelComponent
+    WeatherPanelComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +25,7 @@ import { MatCardModule } from "@angular/material/card";
     HttpClientModule,
     MatGridListModule,
     MatCardModule,
+    QRCodeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
